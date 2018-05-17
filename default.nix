@@ -6,8 +6,8 @@ self: super: with self; {
 
   pythonOverrides = {
     packageOverrides = python-self: python-super: {
-      flask-ruben-helloworld = pythonPackages.buildPythonPackage rec {
-        name = "flask-ruben-hello-world-${version}";
+      flask-helloworld = pythonPackages.buildPythonPackage rec {
+        name = "flask-hello-world-${version}";
         version = "0.1.0";
 
         src = fetchgit {
