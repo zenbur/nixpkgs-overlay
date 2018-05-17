@@ -6,14 +6,14 @@ self: super: with self; {
 
   pythonOverrides = {
     packageOverrides = python-self: python-super: {
-      flask-helloworld = pythonPackages.buildPythonPackage rec {
-        name = "flask-hello-world-${version}";
+      flask-ruben-helloworld = pythonPackages.buildPythonPackage rec {
+        name = "flask-ruben-helloworld-${version}";
         version = "0.1.0";
 
         src = fetchgit {
           url = "https://github.com/zenbur/flask-hello-world";
-          rev = "9737962dbbea1c8bbd44f8fd0b6cb28bd4b216fa";
-          sha256 = "0msi2pyqg495irwkk02x0g2542n5chag6jhdxwv68cdk5lf3lx7f";
+          rev = "2d0a6d470707558795686ece4da53bc3648ebdf0";
+          sha256 = "01vfckg2km3aqfs431963x1v316mw4hv4dnghf1lpwa9blfy5x7";
         };
         propagatedBuildInputs = with pythonPackages; [
           flask
