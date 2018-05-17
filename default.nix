@@ -12,8 +12,8 @@ self: super: with self; {
 
         src = fetchgit {
           url = "https://github.com/zenbur/flask-hello-world";
-          rev = "59ce6930a3cf6d5f25c8d40de246440d3ffd17f8";
-          sha256 = "0b4sy25kf9x0zhlzz4h3r97gjjmmpicjxkw4frshlahv8prvhmlw";
+          rev = "eb08f4e0b927e5e6065991726039f23a01e9d89f";
+          sha256 = "0d33mf9k8ihkk5glymwx9n5bicpkvh96xw646qviqjspzngh71hb";
         };
         propagatedBuildInputs = with pythonPackages; [
           flask
